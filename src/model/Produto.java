@@ -8,7 +8,7 @@ public class Produto {
 
     private int id_produto;
     private String status;
-    private int dataValidade;
+    private String dataValidade;
     private String tipoProd;
     private String nomeProd;
     private int quantidade;
@@ -17,7 +17,7 @@ public class Produto {
 
 
 
-    public Produto(int id_produto, String status, int dataValidade , String tipoProd , String nomeProd , int quantidade , double preco){
+    public Produto(int id_produto, String status, String dataValidade , String tipoProd , String nomeProd , int quantidade , double preco){
         
         this.id_produto = id_produto;
         this.status = status;
@@ -36,7 +36,7 @@ public class Produto {
         return status;
     }
 
-    public int getDataValidade(){
+    public String getDataValidade(){
         return dataValidade;
 
     }
